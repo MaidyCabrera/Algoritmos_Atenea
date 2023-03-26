@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+</head>
+
+<body>
+    <form action="procesar.html" method="get">
+        <!---->
+        <fieldset>
+            <legend>Controles del Formulario</legend>
+            <label for="usuario"> Usuario: </label>
+            <input type="text" pattern="[A-Z a-z]{0,5}" title="Ingresar un nombre de máximo 5 letras" value="Paulo"
+                ide="usuario" required name="usuario">
+            <br>
+            <br>
+            <label for="correo"> Correo: </label>
+            <input type="email" size="40" id="correo" name="correo" multiple>
+            <br>
+            <br>
+            <label for="telefono"> Teléfono: </label>
+            <input type="telefono" size="40" id="correo" name="telefono">
+            <br>
+            <br>
+            <label for="fecha"> Fecha: </label>
+            <input type="date" id="fecha">
+            <br>
+            <br>
+            <!--Radio-->
+            <label for="edad">Joven</label>
+            <input type="radio" id="joven" name="edad">
+            <label for="edad">Adulto</label>
+            <input type="radio" id="adulto" name="edad">
+            <label for="edad">Tercera Edad</label>
+            <input type="radio" id="tercera" name="edad">
+            <br>
+            <br>
+
+            <!--Rangos-->
+            <label for="rango">Rango:</label>
+            <input type="range" id="ingreso" min="0" max="100">
+            <br>
+            <br>
+            <label for="terminos">Terminos:</label>
+            <input type="checkbox" name="checkbox" id="checkbox" value="si">
+            <br>
+            <br>
+            <select id="pais" name="pais">
+                <option value="co">Colombia</option>
+                <option value="br">Brasil</option>
+                <option value="ca">Canada</option>
+                <option value="ec">Ecuador</option>
+            </select>
+            <br>
+            <br>
+            <textarea name="datos" id="datos"></textarea>
+            <br>
+            <br>
+              <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
